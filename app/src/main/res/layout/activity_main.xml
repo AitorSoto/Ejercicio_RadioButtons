@@ -81,7 +81,5 @@
             android:layout_height="wrap_content"
             android:hint="Numero de empleados"
             android:inputType="number"/>
-
-
     </LinearLayout>
 </LinearLayout>
