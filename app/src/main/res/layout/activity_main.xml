@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp">
+    <TextView
+        android:id="@+id/tv_estado_marital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/tipo_cliente"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    <RadioGroup
+        android:id="@+id/rg_tipo_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:checkedButton="@id/rb_particular"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_coorporativo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/coorporativo"/>
+
+        <RadioButton
+            android:id="@+id/rb_particular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Particular"/>
+    </RadioGroup>
+    <LinearLayout
+        android:id="@+id/contenedor_particular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Nombre completo"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/et_profesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Profesion"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_contenedor_coorporativo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/et_razon_social"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Razon social"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/et_representante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Repesenante"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/et_no_empleados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Numero de empleados"
+            android:inputType="number"/>
+
+
+    </LinearLayout>
+</LinearLayout>
